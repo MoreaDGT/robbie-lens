@@ -1,12 +1,11 @@
 *  {
     margin: 0;
-    font-size: 20px;
-    
-    
+    font-family: sans-serif;
+    padding: 0;
 }
 
 h1 {
-    color: rgb(116, 116, 195);
+    color: rgb(146, 146, 211);
     font-size: 3rem;
 }
 
@@ -36,24 +35,24 @@ main {
 main div{
     color: white;
     margin: 82px 10px 1px 30px  ;
-    padding-left: 20px;
 }
 
 main img {
     margin: 60px 130px 60px 30Px ;
-    height: 350px;
+    width: 25%;
     padding: 30px 30px 30px 0px;
 } 
 
 main div a {
     color: white;
-    background-color: rgb(104, 104, 215);
+    background-color: rgb(146, 146, 211);
     padding: 10px;
     margin-top: 25px;
     border-radius: 25px;
     text-decoration: none;
     text-align: center;
-    width: 50%;
+    font-size: 0.8rem;
+    width: 38%;
 }
 
 span {
@@ -70,3 +69,28 @@ span {
     margin-bottom: 10px;
 }
 
+@media all and (max-width: 650px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header div {
+        margin: 18px 0 10px 0;
+    }
+    main {
+        display: flex; 
+        flex-direction: column-reverse;
+    }
+    main img {
+        width: 100%;
+        margin: 0;
+    }
+    main div {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
